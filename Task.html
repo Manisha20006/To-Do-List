@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Productivity To-Do App</title>
+
+<link rel="stylesheet" href="Task.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Productivity To-Do App</h1>
+
+<div class="input-section">
+
+<input type="text" id="taskInput" placeholder="Enter task">
+
+<select id="priority">
+<option value="Low">Low</option>
+<option value="Medium">Medium</option>
+<option value="High">High</option>
+</select>
+
+<input type="date" id="dueDate">
+
+<button onclick="addTask()">Add</button>
+
+</div>
+
+<input type="text" id="searchTask" placeholder="Search tasks">
+
+<div class="filters">
+
+<button onclick="filterTasks('all')">All</button>
+<button onclick="filterTasks('completed')">Completed</button>
+<button onclick="filterTasks('pending')">Pending</button>
+
+</div>
+
+<ul id="taskList"></ul>
+
+</div>
+
+<script src="Task.js"></script>
+
+</body>
+</html>
